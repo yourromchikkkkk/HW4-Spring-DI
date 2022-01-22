@@ -6,10 +6,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        try (        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "applicationcontext.xml"
-        );) {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
+                "applicationcontext.xml");
             Calculator calculator = context.getBean("calculator", Calculator.class);
             System.out.println("Input two integers:");
             int a = scanner.nextInt();
@@ -20,7 +18,5 @@ public class Main {
             } else {
                 System.out.println(calculator.performMinus(a, b));
             }
-        }
-
     }
 }
