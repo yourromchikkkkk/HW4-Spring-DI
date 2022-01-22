@@ -1,8 +1,7 @@
 package com.cursor.spring.javaconfigurationmethod;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
 public class MinusService implements Service{
 
     @Override

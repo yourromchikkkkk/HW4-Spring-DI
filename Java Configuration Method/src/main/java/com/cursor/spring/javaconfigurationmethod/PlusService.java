@@ -1,8 +1,6 @@
 package com.cursor.spring.javaconfigurationmethod;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class PlusService implements Service{
 
     @Override
